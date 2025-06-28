@@ -1,0 +1,9 @@
+#root {
+
+  margin: 0;
+  text-align: center;
+}
+
+.main-content {
+  min-height: calc(100vh - 137px); /* 100% viewheight minus the sum of the navbar and footer heights */
+}
