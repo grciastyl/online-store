@@ -1,23 +1,24 @@
 import "./product.css";
 import QuantityPicker from "./Quantitypicker";
 
-function Product() {
+function Product(props) {
+
     return (
         <div className='product'>
-            <span>Id: 0000</span>
-            <img src="https://picsum.photos/250/200" alt="" />
-            <h3>This is a product</h3>
+            <span>Id: {props.data.id}</span>
+            <img src={"../images/"+props.data.image} alt="" />
+            <h3>{props.data.title}</h3>
             <div className="price-section">
                 <div className="prices">
-                    <label>$total</label>
-                    <label>$price</label>
+                    <label>Total: $0.00</label>
+                    <label>Price: ${props.data.price}</label>
                 </div>
                 <div>
                     <QuantityPicker />
                 </div>
             </div>
 
-        <div>
+        <div className="add-button">
             <button className="btn btn-sm btn-success">Add</button>
         </div>
         </div >

@@ -20,7 +20,7 @@ function showEmail(){
             <h3>About Us</h3>
             <div className="box">
                 <h2>Chris</h2>
-                { visibleEmail ? <h5>grcistyl130@hotmail.com</h5> : <label>Click the button to see my email</label> }
+                { visibleEmail ? <h5>Christopher.garcia@SDGKU.edu</h5> : <label>Click the button to see my email</label> }
                 <br />
                 {
                     !visibleEmail
