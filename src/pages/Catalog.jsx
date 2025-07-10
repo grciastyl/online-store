@@ -20,7 +20,7 @@ function Catalog() {
 
 
     return (
-        <div className='main-content'>
+        <div className='main-content page'>
             <h3>We have {products.length} new Products!</h3>
             <br />
             <div className="catalog-items">

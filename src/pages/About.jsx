@@ -16,10 +16,10 @@ function showEmail(){
 
 
     return (
-        <div className="about">
+        <div className="about page">
             <h3>About Us</h3>
             <div className="box">
-                <h2>Chris</h2>
+                <h2>Chris Garcia</h2>
                 { visibleEmail ? <h5>Christopher.garcia@SDGKU.edu</h5> : <label>Click the button to see my email</label> }
                 <br />
                 {

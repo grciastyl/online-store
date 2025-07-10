@@ -22,6 +22,7 @@
     .prices {
         display: flex;
         flex-direction: column;
+
     }
 
     .product img {
