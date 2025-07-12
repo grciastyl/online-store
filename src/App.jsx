@@ -4,6 +4,7 @@ import Home from './pages/Home'
 import Catalog from './pages/Catalog'
 import About from './pages/About'
 import Cart from './pages/Cart'
+import Payment from './pages/Payment'
 import Footer from './components/Footer'
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
@@ -24,6 +25,8 @@ function App() {
           <Route path="/catalog" element={<Catalog />}></Route>
           <Route path="/about" element={<About />} ></Route>
           <Route path='/cart' element={<Cart />} ></Route>
+          <Route path='/payment' element={<Payment />} ></Route>
+          
         </Routes>
 
         <Footer />

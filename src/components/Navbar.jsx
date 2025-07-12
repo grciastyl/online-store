@@ -7,11 +7,11 @@ import DataContext from "../state/DataContext";
 function Navbar() {
 
     const user = useContext(DataContext).user;//get to the context, get the user and store it as a variable "user"
-
+    const cart = useContext(DataContext).cart;
 
     return (
         <div>
-            <nav className="navbar navbar-expand-lg" data-bs-theme= "dark" >
+            <nav className="navbar navbar-expand-lg" data-bs-theme="dark" >
                 <div className="container-fluid">
                     <Link className="navbar-brand" to="#">Online Store</Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,7 +33,9 @@ function Navbar() {
                             <span className='btn btn-outline-light'>
                                 {user.name}
                             </span>
-                            <Link className="btn btn-outline-light" to="./cart">Cart</Link>
+                            <Link type="button" className="btn btn-outline-light"  to="./cart">
+                                View Cart <span className="badge text-bg-secondary">{cart.length}</span>
+                            </Link>
                         </form>
                     </div>
                 </div>

@@ -5,6 +5,7 @@
 .cart .parent .products {
     flex: 3;
     display: flex;
+    flex-direction: column;
     border-style: groove;
     border-width: 1px;
     border-color: black;
@@ -16,6 +17,32 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    align-content: center;
+    margin: 20px;
 }
 
+.cart .prod-cart {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    border: 1px solid lightseagreen;
+    margin: 12px;
+    border-radius: 5px;
+}
+
+.cart .prod-cart img {
+    max-height: 90px;
+    width: 90px;
+}
+.cart .prod-cart h6{
+    flex: 4;
+}
+
+.cart.prod-cart label{
+    flex:1;
+}
+
+.price-label {
+    margin-right: 40px;
+}
+.qty-label{margin-right: 40px;
+}

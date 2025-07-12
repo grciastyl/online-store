@@ -1,11 +1,20 @@
 import { Value } from "sass";
 import "./product.css";
 import QuantityPicker from "./Quantitypicker";
+import { useContext } from "react";
+import DataContext from "../state/DataContext";
 
 function Product(props) {
 
+    const addProductToCart = useContext(DataContext).addProductToCart;
+
     function addToCart() {
         console.log("Adding to cart");
+
+        let copy = {...props.data};
+        copy.quantity = 1;
+
+        addProductToCart(copy);
     }
 
 
