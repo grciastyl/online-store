@@ -1,12 +1,18 @@
+import { Value } from "sass";
 import "./product.css";
 import QuantityPicker from "./Quantitypicker";
 
 function Product(props) {
 
+    function addToCart() {
+        console.log("Adding to cart");
+    }
+
+
     return (
         <div className='product'>
             <span>Id: {props.data.id}</span>
-            <img src={"../images/"+props.data.image} alt="" />
+            <img className="product_pic" src={"../images/" + props.data.image} alt="" />
             <h3>{props.data.title}</h3>
             <div className="price-section">
                 <div className="prices">
@@ -18,9 +24,9 @@ function Product(props) {
                 </div>
             </div>
 
-        <div className="add-button">
-            <button className="btn btn-sm btn-success">Add</button>
-        </div>
+            <div className="add-button">
+                <button className="btn btn-sm btn-success" onClick={addToCart}>Add</button>
+            </div>
         </div >
     );
 }

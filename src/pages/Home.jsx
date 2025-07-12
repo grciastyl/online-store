@@ -4,10 +4,11 @@ import "./Home.css";
 function Home() {
     return (
         <div className="home page">
-            <h1>Welcome to the Home Page</h1>
+            <h1>Welcome to My SDGKU Online Store!</h1>
 
-            <img className="honeycomb" src='/images/honeycomb.webp'></img>
-            <h2>Custom Made Creations from the Colorado Plains</h2>
+            <img className="honeycomb" src='/images/bag.png'></img>
+            <h2>Everything You Need,</h2>
+            <h2>All In One Place!</h2>
         </div>
 
     );

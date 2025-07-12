@@ -4,6 +4,8 @@
   text-align: center;
 }
 
+
 .page {
   min-height: calc(100vh - 136px); /* 100% viewheight minus the sum of the navbar and footer heights */
-  }
+  background-color: #c4dfe6;
+}

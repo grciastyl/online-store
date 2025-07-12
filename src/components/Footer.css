@@ -1,6 +1,6 @@
 .footer {
     width: 100%;
-    background-color: rgb(222, 43, 228);
+    background-color: #66a5ad;
     height: 80px;
     display: flex;
     flex-direction: column;
@@ -10,4 +10,8 @@
 }
 .flag {
     max-height: 40px;
+}
+
+.flag:hover {
+    transform: scale(1.3);
 }

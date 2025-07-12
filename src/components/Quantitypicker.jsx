@@ -14,8 +14,6 @@ function QuantityPicker() {
     function decrease() {
         const val = quantity - 1
         setQuantity(val);
-
-
     }
 
 

@@ -1,0 +1,21 @@
+.cart .parent {
+    display: flex;
+}
+
+.cart .parent .products {
+    flex: 3;
+    display: flex;
+    border-style: groove;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.cart .parent .totals {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
