@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 
 function Login() {
     return (
-        <div className="login_content">
-            <h1>Please Login</h1>
+        <div className="login_content page">
+            <h1 className="login_title">Please Login</h1>
             <form>
                 <div className="login_form">
                     <input type="text" placeholder="User Name" />Enter User Name:

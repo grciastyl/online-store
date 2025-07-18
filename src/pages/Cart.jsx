@@ -35,7 +35,7 @@ function Cart() {
                 </div>
                 <div className="totals">
                     <h3>Total</h3>
-                    <h4>$$$$</h4>
+                    <h4>$49.99</h4>
                     <br />
                     <Link  onClick={Pay} to="/payment" className="btn btn-lg btn-success">Pay Now</Link>
                 </div>

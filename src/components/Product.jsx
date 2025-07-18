@@ -24,7 +24,7 @@ function Product(props) {
 
     return (
         <div className='product'>
-            <span>Id: {props.data.id}</span>
+            <span className="id-tag">Id: {props.data.id}</span>
             <img className="product_pic" src={"../images/" + props.data.image} alt="" />
             <h3>{props.data.title}</h3>
             <div className="price-section">

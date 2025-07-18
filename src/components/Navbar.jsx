@@ -13,7 +13,7 @@ function Navbar() {
         <div>
             <nav className="navbar navbar-expand-lg" data-bs-theme="dark" >
                 <div className="container-fluid">
-                    <Link className="navbar-brand" to="#">Online Store</Link>
+                    <h2 className="navbar-brand">Online Store</h2>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>

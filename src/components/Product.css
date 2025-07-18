@@ -41,5 +41,8 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
+    }
 
+    .product .id-tag {
+        visibility: hidden;
     }

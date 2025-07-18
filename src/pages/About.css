@@ -1,0 +1,28 @@
+.about {
+    padding: 20px 40px;
+}
+.Aspen {
+    width: 20%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.photo-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 4px;
+    justify-content: center;
+}
+
+.narrative {
+    display: flex;
+    color: #555;
+    text-align: center;
+    margin: 0 80px;
+}
+
+.Aspen:hover {
+    transform: scale(1.25);
+    transition: 0.3s;
+}
