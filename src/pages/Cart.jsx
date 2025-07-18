@@ -27,9 +27,9 @@ function Cart() {
                         <div key={item.id} className='prod-cart'>
                             <img src={"../images/" + item.image} alt="" />
                             <h6>{item.title}</h6>
-                            <label className="price-label">Price:${item.price}</label>
+                            <label className="price-label">Price:${item.price * item.quantity}</label>
                             <label className="qty-label">Qty:{item.quantity}</label>
-                            <button>Remove</button>
+                            <button className="btn btn-sm btn-success">Remove</button>
                         </div>
                     )}
                 </div>
@@ -37,7 +37,7 @@ function Cart() {
                     <h3>Total</h3>
                     <h4>$$$$</h4>
                     <br />
-                    <Link  onClick={Pay} to="/payment" className="btn btn-outline-dark btn-lg">Pay Now</Link>
+                    <Link  onClick={Pay} to="/payment" className="btn btn-lg btn-success">Pay Now</Link>
                 </div>
             </div>
         </div>

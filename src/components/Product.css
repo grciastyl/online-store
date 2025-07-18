@@ -22,7 +22,6 @@
     .prices {
         display: flex;
         flex-direction: column;
-
     }
 
     .product img {
@@ -37,4 +36,10 @@
     .product_pic:hover {
         transform: scale(1.1);
         transition: 0.3s;
+    }
+    .product .controls {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
     }
